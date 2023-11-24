@@ -1,0 +1,36 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <h3 id="title">HOME</h3>
+                <div id="display-home-score">
+                    <p id="home-score">0</p>
+                </div>
+                <div class="buttons-container">
+                    <button class="points-button" onclick="homePlusOne()">+1</button>
+                    <button class="points-button" onclick="homePlusTwo()">+2</button>
+                    <button class="points-button" onclick="homePlusThree()">+3</button>
+                </div>
+            </div>
+            <button id="reset-game" onclick="resetScore()">Reset</button>
+            <div>
+                <h3 id="title">GUEST</h3>
+                <div id="display-guest-score">
+                    <p id="guest-score">0</p>
+                </div>
+                <div class="buttons-container">
+                    <button class="points-button" onclick="guestPlusOne()">+1</button>
+                    <button class="points-button" onclick="guestPlusTwo()">+2</button>
+                    <button class="points-button" onclick="guestPlusThree()">+3</button>
+                </div>
+            </div>
+        </div>
+        <div id="timer">
+            <!-- Need to implement timer-->
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
